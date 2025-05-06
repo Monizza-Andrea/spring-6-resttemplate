@@ -10,10 +10,7 @@ import guru.springframework.spring6resttemplate.model.BeerDTO;
 
 
 import java.util.List;
-/**
- * guru.springframework.spring6resttemplate.model.BeerDTO is being utilized since JackSon serializer is giving problems.
- * Is that due for being in the same package?
- * */
+
 @JsonIgnoreProperties(ignoreUnknown = true, value = "pageable")
 public class BeerDTOPageImpl<BeerDTO> extends PageImpl<guru.springframework.spring6resttemplate.model.BeerDTO> {
 
