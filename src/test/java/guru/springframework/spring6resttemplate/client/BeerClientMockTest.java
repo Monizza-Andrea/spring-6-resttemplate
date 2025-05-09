@@ -77,6 +77,7 @@ public class BeerClientMockTest {
 
         server.expect(method(HttpMethod.GET))
                 .andExpect(requestTo(uri))
+                .andExpect(header("Authorization", "Basic VE9QdXNlcjpkZW1vUFNX"))
                 .andExpect(queryParam("beerStyle", "GOSE"))
                 .andRespond(withSuccess(response, MediaType.APPLICATION_JSON));
 
